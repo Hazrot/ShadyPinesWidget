@@ -540,6 +540,7 @@ function () {
 
       switch (day) {
         case 1:
+          selectMenuClass[0].classList.add('Widget-active');
           break;
 
         case 2:
@@ -568,7 +569,6 @@ function () {
           break;
 
         default:
-          selectMenuClass[1].classList.add('Widget-active');
       }
 
       var navbar = document.querySelector('.widget-menu').querySelectorAll('a');
@@ -630,7 +630,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35387" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36521" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

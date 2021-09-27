@@ -403,6 +403,7 @@ export class Design {
         console.log(day)
         switch (day) {
             case 1:
+                selectMenuClass[0].classList.add('Widget-active');
                 break;
             case 2:
                 selectMenuClass[1].classList.add('Widget-active');
@@ -424,7 +425,7 @@ export class Design {
                 selectMenuClass[6].classList.add('Widget-active');
                 break;
             default:
-                selectMenuClass[1].classList.add('Widget-active');
+
 
         }
         var navbar = document.querySelector('.widget-menu').querySelectorAll('a');
